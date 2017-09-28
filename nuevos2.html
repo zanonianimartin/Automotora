@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body onload="mostrarsubtipo()">
+        <header id="mainHeader">
+        </header>            
+                <div class="container">
+                    <br><br><br>
+                    <h2>Nuevos</h2>
+                    <br>
+                    <div class="jumbotron">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="col-md-5" style="margin:3px">
+                                        <select id="tipo" name="tipo" class="form-control" onchange="mostrarsubtipo()">
+                                            <option value="autos">Autos</option>
+                                            <option value="motos">Motos</option>
+                                            <option value="camiones">Camiones</option>
+                                            <option value="camionetas">Camionetas</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-5" id="sub" style="margin:3px">
+                                        
+                                    </div>
+                                    <div class="col-md-1" id="listar" style="margin:3px" align="center">
+                                       <button type="button" class="btn btn-info" onclick="listar()">Buscar</button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer id="mainFooter">
+                </footer>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="bd/data.js"></script>
+        <script src="js/controladoras/controlador_autos.js"></script>
+        <script src="js/controladoras/controlador_motos.js"></script>
+        <script src="js/controladoras/controlador_camiones.js"></script>
+        <script src="js/controladoras/controlador_camionetas.js"></script>
+        <script src="js/controladoras/controlador_vehiculos.js"></script>
+        <script src="js/controladoras/controlador_paginas.js"></script>
+       
+
+    </script>
+    </body>
+</html>
